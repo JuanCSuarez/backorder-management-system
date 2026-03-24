@@ -5,6 +5,9 @@ C# multi-layered application designed to support backorder tracking, documentati
 ## Overview
 This project was developed as a real-world internal tool to improve efficiency in backorder management processes. It centralizes tracking, documentation, and workflow handling in a structured system.
 
+## Screenshots
+(Add screenshots of the application here)
+
 ## Business Impact
 - Improved team effectiveness by 30%  
 - Enhanced operational visibility  

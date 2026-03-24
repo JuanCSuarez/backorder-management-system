@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4943362E-C05D-4845-B46F-3DDED5173890}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BOToolbox_PL</RootNamespace>
+    <AssemblyName>BOToolbox_PL</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Logo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Tulpep.NotificationWindow, Version=1.1.38.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Tulpep.NotificationWindow.1.1.38\lib\net40\Tulpep.NotificationWindow.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\frm_About_PL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_About_PL.Designer.cs">
+      <DependentUpon>frm_About_PL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_DHLTrack_PL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_DHLTrack_PL.Designer.cs">
+      <DependentUpon>frm_DHLTrack_PL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_Email_PL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_Email_PL.Designer.cs">
+      <DependentUpon>frm_Email_PL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_GPlinks_PL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_GPlinks_PL.Designer.cs">
+      <DependentUpon>frm_GPlinks_PL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_GsiOds_PL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_GsiOds_PL.Designer.cs">
+      <DependentUpon>frm_GsiOds_PL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_Help_PL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_Help_PL.Designer.cs">
+      <DependentUpon>frm_Help_PL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_Others_PL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_Others_PL.Designer.cs">
+      <DependentUpon>frm_Others_PL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_RelNotes_PL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_RelNotes_PL.Designer.cs">
+      <DependentUpon>frm_RelNotes_PL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_Sourcing_PL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_Sourcing_PL.Designer.cs">
+      <DependentUpon>frm_Sourcing_PL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\frm_HomeScreen_PL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\frm_HomeScreen_PL.Designer.cs">
+      <DependentUpon>frm_HomeScreen_PL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\frm_MainScreen_PL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\frm_MainScreen_PL.Designer.cs">
+      <DependentUpon>frm_MainScreen_PL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\frm_WIP_PL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\frm_WIP_PL.Designer.cs">
+      <DependentUpon>frm_WIP_PL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\frm_About_PL.resx">
+      <DependentUpon>frm_About_PL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_DHLTrack_PL.resx">
+      <DependentUpon>frm_DHLTrack_PL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_Email_PL.resx">
+      <DependentUpon>frm_Email_PL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_GPlinks_PL.resx">
+      <DependentUpon>frm_GPlinks_PL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_GsiOds_PL.resx">
+      <DependentUpon>frm_GsiOds_PL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_Help_PL.resx">
+      <DependentUpon>frm_Help_PL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_Others_PL.resx">
+      <DependentUpon>frm_Others_PL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_RelNotes_PL.resx">
+      <DependentUpon>frm_RelNotes_PL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_Sourcing_PL.resx">
+      <DependentUpon>frm_Sourcing_PL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\frm_HomeScreen_PL.resx">
+      <DependentUpon>frm_HomeScreen_PL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\frm_MainScreen_PL.resx">
+      <DependentUpon>frm_MainScreen_PL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\frm_WIP_PL.resx">
+      <DependentUpon>frm_WIP_PL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BOToolbox_BLL\BOToolbox_BLL.csproj">
+      <Project>{58f92b63-a263-4f2c-8334-876e4a993ecc}</Project>
+      <Name>BOToolbox_BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BOToolbox_DAL\BOToolbox_DAL.csproj">
+      <Project>{34e22891-495d-4b99-9b4c-5e43fb9bdf4e}</Project>
+      <Name>BOToolbox_DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Logo.ico" />
+    <None Include="Resources\ico_info.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

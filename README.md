@@ -11,7 +11,6 @@ Configuration values are set for a development environment and do not reflect an
 This application was created to address inefficiencies in backorder tracking and operational workflows, providing a centralized and structured solution for managing data and processes.
 
 ## Screenshots
-## Screenshots
 
 ### Home Screen
 ![Main Screen](screenshots/home.png)

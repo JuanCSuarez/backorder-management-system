@@ -7,6 +7,9 @@ This project was developed as a real-world internal tool to improve efficiency i
 
 Configuration values are set for a development environment and do not reflect any real internal systems.
 
+## Problem Solved
+This application was created to address inefficiencies in backorder tracking and operational workflows, providing a centralized and structured solution for managing data and processes.
+
 ## Screenshots
 ## Screenshots
 
